@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/icon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="theme-color" content="#667eea" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<meta name="apple-mobile-web-app-title" content="Maya" />
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover" class="preload">
+		<div style="display: contents">%sveltekit.body%</div>
+		<script>
+			// Remove preload class after page loads to enable transitions
+			window.addEventListener('load', () => {
+				document.body.classList.remove('preload');
+			});
+		</script>
+	</body>
+</html>
